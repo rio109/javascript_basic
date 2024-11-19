@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0 20px;
+    color: #333;
+}
+
+#current-time,
+#time-zone-manager {
+    margin-bottom: 20px;
+}
+
+#time-zone-manager-select,
+#time-zone-manager-button {
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+#world-time-list .clock {
+    display: flex;
+    justify-content: space-between;
+    /* 요소 간 여백 균일 */
+    align-items: center;
+    /* 세로 정렬 */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+#world-time-list .timezone-name,
+#world-time-list .time-display,
+#world-time-list .remove-container {
+    flex: 1;
+    /* 각 요소가 1:1:1로 동일한 공간을 차지 */
+    text-align: center;
+    /* 중앙 정렬 */
+}
+
+/* 삭제 버튼은 텍스트가 짧으므로 추가 여백 제거 */
+#world-time-list .remove-container {
+    margin-left: auto;
+    /* 자동 여백으로 오른쪽 끝으로 밀기 */
+    text-align: right;
+    /* 텍스트 정렬(추가 요소 대비 안전) */
+}
+
+#world-time-list .remove-btn {
+    color: red;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+#world-time-list .remove-btn:hover {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}

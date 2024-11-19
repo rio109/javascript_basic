@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Timer</title>
+    <link rel="stylesheet" href="./style/timer.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>World Timer</h1>
+
+        <!-- Current Time -->
+        <div id="current-time">
+            <p>local time:<span id="local-time"></span></p>
+            <p>UTC time:<span id="utc-time"></span></p>
+        </div>
+
+        <!-- Add Time Zone -->
+        <div id="time-zone-manager">
+            <label for="time-zone-select">Select Time Zone:</label>
+            <select name="" id="time-zone-select">
+                <option value="Asia/Seoul">Asia/Seoul</option>
+                <option value="America/New_York">America/New_York</option>
+                <option value="Europe/London">Europe/London</option>
+                <option value="Australia/Sydney">Australia/Sydney</option>
+                <option value="Asia/Tokyo">Asia/Tokyo</option>
+            </select>
+            <button id="add-time-zone-button">add</button>
+        </div>
+
+        <!-- World Time List -->
+        <div id="world-time-list"></div>
+    </div>
+</body>
+
+<script src="./js/timer.js"></script>
+
+</html>
